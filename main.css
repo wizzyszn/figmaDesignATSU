@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000A1F;
+    color: white;
+    font-family:  "Quicksand", serif;
+}
+nav{
+    background-color: #06132e;
+    padding-top: 50px;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    justify-self:center;
+    justify-items: baseline;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    gap: 60px;
+   
+}
+nav div a{
+    text-decoration: none;
+    color: white;
+    font-family:  "Quicksand", serif;
+    font-size: 20px;
+    font-weight: 500 ;
+    position: relative;
+    
+
+    
+}
+nav div a::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom:  -5px;
+    transition: all 300ms ease-in;
+
+    
+
+}
+nav div a:hover::after{
+    width: 100%;
+}
+nav div a:hover{
+    color: rgb(190, 190, 190);
+}   
+.hero-section{
+    background-color: #06132e;
+    width: 100%;
+    height: 1100px;
+    background-image: url('assets/Image\ Forground.png'), url('assets/Image\ Background.png'), url('assets/background1.png');
+    background-repeat: no-repeat;
+    background-size: 32%, 70% , 100%;
+    background-position: 80% 10%, 50% 5%, 0% 100%;
+    position: relative;
+
+}
+.container{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.hero-section div{  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50% 50%;
+    height: 1100px;
+    width: auto;
+}
+.hero-section .container div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    margin-left: 200px;
+}
+.hero-section .container div h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.hero-section .container div p{
+    margin-top: -30px;
+}
+.hero-section .container .div2{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    
+}
